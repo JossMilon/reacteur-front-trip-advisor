@@ -1,0 +1,298 @@
+body {
+  background-color: white;
+  font-family: "Trip Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1136px;
+  margin: 0 auto;
+  /* background-color: pink; */
+}
+
+/* TITLES */
+
+h1 {
+  font-size: 54px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #ff5d5d;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 33px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 33px;
+  color: black;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 18px;
+  color: black;
+}
+
+/* HEADER */
+
+header div {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 188px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header i {
+  padding-right: 5px;
+}
+
+header li a {
+  padding: 10px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  margin-right: 5px;
+}
+
+header li a:hover {
+  background-color: #ededed;
+}
+
+header li:last-child a {
+  color: white;
+  width: 148px;
+  padding: 10px 16px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+li:last-child a:hover {
+  background-color: #333333;
+}
+
+/* MAIN > TITLE + SECOND NAV */
+
+.title {
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+h1 span {
+  color: black;
+}
+
+.title ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title li {
+  flex: 1;
+}
+
+.title li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.title a {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 11px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  min-height: 40px;
+}
+
+.title a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* MAIN > PHOTOS */
+
+.photos {
+  display: flex;
+}
+
+.secoond-column-photos {
+  display: flex;
+  flex-direction: column;
+}
+
+.photos img {
+  max-width: 654px;
+  margin: 1px;
+}
+
+.secoond-column-photos img {
+  max-width: 480px;
+}
+
+/* MAIN > BREADCRUMBS (PAS MAL CHEATÉ) */
+
+.breadcrumbs {
+  font-size: 12px;
+  padding: 20px 0 36px 0;
+}
+
+/* MAIN > CITY INTRO BLOCKS */
+
+.city-intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  max-width: 540px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.right {
+  max-width: 480px;
+  font-size: 14px;
+  position: relative;
+}
+
+.top-block {
+  background-color: #fd5d5d;
+  padding: 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.top-block h3 {
+  max-width: 300px;
+  font-size: 28px;
+  line-height: 33px;
+  color: black;
+  margin-bottom: 16px;
+}
+
+.top-block a div {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  max-width: 120px;
+  padding: 20px 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.city-intro img {
+  width: 100%;
+}
+
+/* MAIN > ACTIVITIES */
+
+.activities {
+  /* background-color: yellow; */
+}
+
+.carousel {
+  /* background-color: yellowgreen; */
+  display: flex;
+}
+
+.carousel-intro {
+  /* background-color: fuchsia; */
+  margin-right: 15px;
+  flex: 1;
+}
+
+.carousel-intro p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 12px;
+  padding-right: 50px;
+}
+
+.carousel-intro a {
+  font-family: "Trip Sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+.carousel-list {
+  /* background-color: pink; */
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  flex: 3;
+}
+
+.carousel-item {
+  /* background-color: blue; */
+}
+
+.carousel-item:hover a > img {
+  opacity: 0.5;
+}
+
+.carousel-item:hover h4 {
+  text-decoration: underline;
+}
+
+.carousel-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.carousel-item a {
+  text-decoration: none;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 272px;
+  height: 204px;
+  object-fit: cover;
+  padding-bottom: 8px;
+}
+
+.heart {
+  position: absolute;
+  right: 10px;
+  top: -190px;
+  padding: 10px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.carousel-item-label {
+  /* background-color: blueviolet; */
+  font-size: 14px;
+}
+
+.carousel-item-label img {
+  width: 68px;
+  height: 12px;
+}
+
+.rating {
+  display: flex;
+  margin-top: 10px;
+}
